@@ -26,13 +26,6 @@ int main()
     arvoreB.insereValor(26);
     arvoreB.insereValor(21);
     arvoreB.insereValor(4);
-    arvoreB.insereValor(5);
-    arvoreB.insereValor(20);
-    arvoreB.insereValor(22);
-    arvoreB.insereValor(2);
-    arvoreB.insereValor(17);
-    arvoreB.insereValor(12);
-    arvoreB.insereValor(6);
 
     // Impressão da árvore
     cout << "Percorre a árvore construída" << endl;
@@ -41,7 +34,7 @@ int main()
 
     //Busca se o item está ou não presente
     ArvoreBNode *result = arvoreB.buscaValor(21);
-    cout << "Percorre o nó onde o valor 21 está armazenado" << endl;
+    cout << "Percorre o nó onde o valor 21 está armazenado no nó" << endl;
     result->percorre();
     cout << endl;
 
@@ -54,24 +47,6 @@ int main()
     // Remoção
     arvoreB.removeValor(13);
     cout << "Percorre a árvore após remover 13" << endl;
-    arvoreB.percorre();
-    cout << endl;
-
-    // Remoção
-    arvoreB.removeValor(7);
-    cout << "Percorre a árvore após remover 7" << endl;
-    arvoreB.percorre();
-    cout << endl;
-
-    // Remoção
-    arvoreB.removeValor(4);
-    cout << "Percorre a árvore após remover 4" << endl;
-    arvoreB.percorre();
-    cout << endl;
-
-    // Remoção
-    arvoreB.removeValor(2);
-    cout << "Percorre a árvore após remover 2" << endl;
     arvoreB.percorre();
     cout << endl;
 

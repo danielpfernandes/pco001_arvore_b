@@ -360,13 +360,16 @@ void ArvoreBNode::percorre()
     int i;
     for (i = 0; i < qteValores; i++)
     {
+        if (!isFolha) cout << " é pai das folhas ";
         if (!isFolha)
             ponteirosFilhos[i]->percorre();
         cout << " " << valores[i];
     }
-
-    if (!isFolha)
+    cout << endl;
+    if (!isFolha) cout << " é pai das folhas ";
+    if (!isFolha) {
         ponteirosFilhos[i]->percorre();
+    }
 }
 
 ArvoreBNode *ArvoreBNode::buscaValor(int valor)
